@@ -1,6 +1,6 @@
 # Lissandra
 
-~[](lissandra.png)
+~[](https://github.com/laravelista/Lissandra/blob/master/lissandra.png)
 
 API for Laracasts Feed built with Lumen.
 
