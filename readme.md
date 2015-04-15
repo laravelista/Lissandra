@@ -21,11 +21,11 @@ Returns only the lessons from the current feed from Laracasts in JSON.
 
 Attributes for each lesson from feed:
 
-- title: **string**
-- summary: **string**
-- link: **string** (Link to that lesson)
-- type: **string** (Returns lesson)
-- date: **string** (Date when the lesson was updated in format DD.MM.YYYY (23.12.2014))
+- **`title`** lesson title.
+- **`summary`** lesson description.
+- **`link`** URL to that lesson on Laracasts.
+- **`type`** always returns `lesson`.
+- **`date`** date when the lesson was updated in format `d.m.Y` *(14.04.2015)*
 
 _Example output:_
 
