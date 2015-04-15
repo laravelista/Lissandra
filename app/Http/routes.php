@@ -11,8 +11,4 @@
 |
 */
 
-$app->get('/', function() use ($app) {
-	return $app->welcome();
-});
-
 $app->get('api/v1/feed/lessons', 'App\Http\Controllers\FeedController@lessons');

@@ -7,7 +7,6 @@
     "require": {
         "laravel/lumen-framework": "5.0.*",
         "vlucas/phpdotenv": "~1.0",
-        "sabre/xml": "0.4.*",
         "league/fractal": "0.12.*"
     },
     "require-dev": {

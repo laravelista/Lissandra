@@ -7,10 +7,20 @@ use League\Fractal\Manager;
 
 class FeedController extends Controller {
 
+    /**
+     * @var Lissandra
+     */
     protected $lissandra;
 
+    /**
+     * @var Manager
+     */
     protected $fractal;
 
+    /**
+     * @param Lissandra $lissandra
+     * @param Manager $fractal
+     */
     public function __construct(Lissandra $lissandra, Manager $fractal)
     {
         $this->lissandra = $lissandra;

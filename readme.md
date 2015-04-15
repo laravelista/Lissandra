@@ -15,7 +15,7 @@ To prevent abuse this application (API) caches responses for 30 minutes.
 
 **URL:** `lissandra.laravelista.com/`
 
-#### `api/v1/feed/lessons`
+#### GET `api/v1/feed/lessons`
 
 Returns only the lessons from the current feed from Laracasts in JSON.
 
