@@ -5,13 +5,30 @@ API for Laracasts Feed built with Lumen.
 > Lissandra fetches the Laracasts XML RSS feed and converts it to JSON format.
   By doing so I can fetch the feed with [Laranotti](https://github.com/laravelista/Laranotti).
 
+If you are building something that uses JS and AJAX calls to fetch the Laracasts feed feel free to use `lissandra.laravelista.com` API for your needs to avoid CORS issues.
+
+## Installation
+
+If you want to install Lissandra on your own server follow the instructions bellow.    
+*Also don't forget to create `.env` file in project root after installation. See `.env.example` for ideas.*
+
+Lissandra utilizes Composer to manage its dependencies. So, before using Lissandra, you will need to make sure you have Composer installed on your machine.
+
+You can install Lissandra by issuing the Composer `create-project` command in your terminal:
+
+```
+composer create-project laravelista/lissandra --prefer-dist
+```
+
+See [Lumen documentation](http://lumen.laravel.com/docs) for more details on the inner workings of Lissandra.
+
 ## Caching
 
-To prevent abuse this application (API) caches responses for 30 minutes.
+To prevent abuse Lissandra caches the Laracasts feed for 30 minutes.
 
-**I suggest that the app that consumes this API has a waiting period of 1 hour.**
+**I suggest that the app that consumes this API has a waiting period of 1 hour before contacting Lissandra again.**
 
-## API
+## Learn the API
 
 **URL:** `lissandra.laravelista.com/`
 
