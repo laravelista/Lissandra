@@ -1,5 +1,7 @@
 # Lissandra
 
+~[](https://raw.githubusercontent.com/laravelista/Lissandra/master/lissandra.png)
+
 API for Laracasts Feed built with Lumen.
 
 > Lissandra fetches the Laracasts XML RSS feed and converts it to JSON format.
