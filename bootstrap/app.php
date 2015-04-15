@@ -91,4 +91,19 @@ $app->singleton(
 
 require __DIR__.'/../app/Http/routes.php';
 
+/*
+|--------------------------------------------------------------------------
+| New Relic App Name
+|--------------------------------------------------------------------------
+|
+| If the extension `newrelic` is loaded then
+| set the name of the app to something.
+|
+*/
+
+if (extension_loaded('newrelic'))
+{
+    newrelic_set_appname('Lissandra');
+}
+
 return $app;
