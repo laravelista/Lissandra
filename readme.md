@@ -69,4 +69,6 @@ _Example output:_
 ]
 ```
 
+## Credits
 
+- The cool image of Lissandra is from [Aliaser on DeviantArt](http://aliasear.deviantart.com/art/Lissandra-371684215)
