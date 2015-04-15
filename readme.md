@@ -23,7 +23,7 @@ Attributes for each lesson from feed:
 
 - title: **string**
 - summary: **string**
-- link: **string** (Link to that lesson or series)
+- link: **string** (Link to that lesson)
 - type: **string** (Returns lesson)
 - date: **string** (Date when the lesson was updated in format DD.MM.YYYY (23.12.2014))
 
