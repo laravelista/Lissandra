@@ -1,7 +1,7 @@
 {
     "name": "laravelista/lissandra",
     "description": "API for Laracasts Feed built with Lumen.",
-    "keywords": ["api", "laravel", "laracasts", "feed", "json", "xml"],
+    "keywords": ["api", "lumen", "laracasts", "feed", "json", "xml"],
     "license": "MIT",
     "type": "project",
     "require": {
