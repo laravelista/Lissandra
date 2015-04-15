@@ -11,4 +11,8 @@
 |
 */
 
+$app->get('/', function() {
+    return redirect('https://github.com/laravelista/Lissandra');
+});
+
 $app->get('api/v1/feed/lessons', 'App\Http\Controllers\FeedController@lessons');
