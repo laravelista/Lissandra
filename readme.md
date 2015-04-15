@@ -1,17 +1,53 @@
-## Lumen PHP Framework
+# Lissandra
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/downloads.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+API for Laracasts Feed built with Lumen.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+> Lissandra fetches the Laracasts XML RSS feed and converts it to JSON format.
+  By doing so I can fetch the feed with [Laranotti](https://github.com/laravelista/Laranotti).
 
-## Official Documentation
+## Caching
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+To prevent abuse this application (API) caches responses for 30 minutes.
 
-### License
+**I suggest that the app that consumes this API has a waiting period of 1 hour.**
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## API
+
+**URL:** `lissandra.laravelista.com/`
+
+#### `api/v1/feed/lessons`
+
+Returns only the lessons from the current feed from Laracasts in JSON.
+
+Attributes for each lesson from feed:
+
+- title: **string**
+- summary: **string**
+- link: **string** (Link to that lesson or series)
+- type: **string** (Returns lesson)
+- date: **string** (Date when the lesson was updated in format DD.MM.YYYY (23.12.2014))
+
+_Example output:_
+
+
+```
+[
+    {
+        "title": "Introducing Lumen",
+        "summary": "Lumen is the perfect solution for building Laravel based micro-services and blazing fast APIs. In fact, it's one of the fastest micro-frameworks available. Let me show you how easy it is to get setup.",
+        "link": "https:\/\/laracasts.com\/lessons\/introducing-lumen",
+        "type": "lesson",
+        "date": "14.04.2015"
+    },
+    {
+        "title": "Selenium",
+        "summary": "When you use the Selenium extension for Integrated, the API is identical (plus some browser-specific actions). This means, you can automate the browser with minimal effort.",
+        "link": "https:\/\/laracasts.com\/series\/intuitive-integration-testing\/episodes\/5",
+        "type": "lesson",
+        "date": "13.04.2015"
+    },
+    ...
+]
+```
+
+
