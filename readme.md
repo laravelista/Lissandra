@@ -7,7 +7,7 @@ API for Laracasts Feed built with Lumen.
 > Lissandra fetches the Laracasts XML RSS feed and converts it to JSON format.
   By doing so I can fetch the feed with [Laranotti](https://github.com/laravelista/Laranotti).
 
-If you are building something that uses JS and AJAX calls to fetch the Laracasts feed feel free to use `lissandra.laravelista.com` API for your needs to avoid CORS issues.
+~~If you are building something that uses JS and AJAX calls to fetch the Laracasts feed feel free to use `lissandra.laravelista.com` API for your needs to avoid CORS issues.~~
 
 ## Installation
 
@@ -32,7 +32,7 @@ To prevent abuse Lissandra caches the Laracasts feed for 30 minutes.
 
 ## Learn the API
 
-**URL:** `lissandra.laravelista.com/`
+~~**URL:** `lissandra.laravelista.com/`~~
 
 #### GET `api/v1/feed/lessons`
 
